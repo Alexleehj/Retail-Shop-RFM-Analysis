@@ -5,6 +5,7 @@
  - The analysis is conducted via sql to process the raw data and Power BI to display the analysis result.
 
 ## Dataset information
+ - source link: https://archive.ics.uci.edu/dataset/502/online+retail+ii
  - Online Retail dataset contains all the transactions occurring for a UK-based and registered.
  - Time: Between 01/12/2009 and 09/12/2011. 
  - Product: unique all-occasion gift-ware, many customers of the company are wholesalers.

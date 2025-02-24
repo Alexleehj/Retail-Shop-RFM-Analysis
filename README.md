@@ -3,9 +3,6 @@
 ## Project Introduction & Business target
 In this project, I want to demonstrate a commonly used RFM model for analyzing the customer segementation, identify customer value which give marketers better picture of how they can engage customers with different strategies.
 
-## Analysis tools
-SQL Server, Power BI
-
 ## Dataset
  - Data Source: https://archive.ics.uci.edu/dataset/502/online+retail+ii
  - Online Retail dataset contains all the transactions occurring for a UK-based
@@ -22,4 +19,10 @@ SQL Server, Power BI
 | UnitPrice   | Product unique price| 
 | CustomerID  | Unique customer number| 
 | Country     | Country name. The country where the customer lives.| 
+
+
+## Analysis tools
+ - Microsoft SQL Server
+ - Power BI
+
 

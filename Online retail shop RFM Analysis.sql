@@ -74,7 +74,7 @@ FROM [Portfolio].[dbo].[combined_sales];
 
 
 -- Delete full duplicated records
--- Use ROW_NUMBER() to keep the 1st record from duplicated group£¨based on InvoiceDate ascending£©
+-- Use ROW_NUMBER() to keep the 1st record from duplicated groupÂ£Â¨based on InvoiceDate ascending
 WITH CTE_CompleteDuplicates AS (
     SELECT 
         *,
@@ -92,7 +92,7 @@ DELETE FROM CTE_CompleteDuplicates
 WHERE RowNum > 1;
 
 -- Delete business logic duplication based on:CustomerID + InvoiceNo + StockCode + InvoiceDate
--- Keep the 1st record from duplicated group based on business logic£¨ InvoiceDate ascending£©
+-- Keep the 1st record from duplicated group based on business logicÂ£Â¨ InvoiceDate ascending
 WITH CTE_BusinessDuplicates AS (
     SELECT 
         *,
@@ -204,7 +204,7 @@ SELECT TOP 10 *
 FROM [Portfolio].[dbo].[RFM_Base]
 ORDER BY Monetary DESC;
 
--- Recency£¨should >= 0£©
+-- RecencyÂ£Â¨should >= 0Â£Â©
 SELECT 
     MIN(Recency) AS MinRecency,
     MAX(Recency) AS MaxRecency

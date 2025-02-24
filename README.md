@@ -22,7 +22,10 @@ In this project, I want to demonstrate a commonly used RFM model for analyzing t
 
 
 ## Analysis tools
- - Microsoft SQL Server
- - Power BI
+ - Microsoft SQL Server for data analysis
+ - Power BI for data visualization
+
+
+## Dashboard
 
 

@@ -22,7 +22,7 @@ In this project, I want to demonstrate a commonly used RFM model for analyzing t
 
 
 ## Analysis tools
- - Microsoft SQL Server for data analysis
+ - Microsoft SQL Server for data analysis, view details [Here](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Online%20retail%20shop%20RFM%20Analysis.sql)
  - Power BI for data visualization
 
 

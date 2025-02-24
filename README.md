@@ -1,6 +1,6 @@
 # Retail-Shop-RFM-Analysis
 
-## Project Introduction & Business target
+## Project introduction & business target
 In this project, I want to demonstrate a commonly used RFM model for analyzing the customer segementation, identify customer value which give marketers better picture of how they can engage customers with different strategies.
 
 ## Dataset

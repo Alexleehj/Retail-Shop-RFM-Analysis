@@ -49,7 +49,7 @@ The data source usually comes from the company's CRM-related order data, in belo
 
 
 ## Dashboard snapshoot
-![Business Overview](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/raw/main/Retail%20shop%20business%20overview.png)
+![Business Overview](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Business%20overview.png)
 ![RFM Segment](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/RFM%20segments.png)
 
 

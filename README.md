@@ -1,7 +1,7 @@
 # Retail-Shop-RFM-Analysis
 
 ## Project introduction & business target
-In this project, I want to demonstrate a well-known RFM model for analyzing the customer segmentation, identify customer value which give marketers better picture of how they can engage customers with different strategies.
+In this project, I want to introduce a well-known RFM model for analyzing the customer segmentation, identify customer value which give marketers better picture of how they can engage customers with different marketing strategies.
 
 ## What is RFM?
 The RFM model describes the value of a customer through three indicators: recent transaction behavior, overall transaction frequency, and transaction amount. Based on these three indicators, 8 types of customer value are divided:

@@ -27,5 +27,5 @@ In this project, I want to demonstrate a well-known RFM model for analyzing the 
 
 
 ## Dashboard Snapshoot
-
+[Business Overview test] (https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Retail%20shop%20business%20overview.png)
 

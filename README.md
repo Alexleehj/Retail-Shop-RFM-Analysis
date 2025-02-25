@@ -65,7 +65,7 @@ Since the data source is much earlier than the author's development time, we use
 | 14911      | 1       | 398       | 291420.81     |
 | 17450      | 8       | 51        | 244784.25     |
 
-### 2. Binning method:
+### 2. Binning method
  - Recency: Bin in ascending order (the fewer days, the higher the score).
  - Frequency and Monetary: Bin in descending order (the larger the value, the higher the score).
  - Use NTILE(5) to divide each indicator into 5 groups and generate a score of 1-5.
@@ -103,6 +103,7 @@ As a result, we can see the numbers and proportion for this company customers' s
 | High-Potential           | 310        | 5%         |
 
 
+## Take away and marketing approach
 
 
 

@@ -55,7 +55,7 @@ Power BI supports basic data processing, but for large datasets, it's better to 
 
 
 ## RFM segmentation details and steps
-### 1. Calculate customer basic Recency, Frequency, Monetary original values via sql
+### 1. Calculate customer basic Recency, Frequency, Monetary original values
 Since the data source is much earlier than the author's development time, we use the most recent time in the data source as the baseline to calculate recency. once compeletd, you will see sample data as follow:
     
 | CustomerID | Recency | Frequency | Monetary      |

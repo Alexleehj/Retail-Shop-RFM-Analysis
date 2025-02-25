@@ -42,7 +42,7 @@ The data source usually comes from the company's CRM-related order data, in belo
 
 
 ## Analysis tools
- - Microsoft SQL Server for data analysis, view details [Here](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Online%20retail%20shop%20RFM%20Analysis.sql)
+ - Microsoft SQL Server for ETL jobs, view details [Here](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Online%20retail%20shop%20RFM%20Analysis.sql)
  - Power BI for data visualization [Here](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Retail%20RFM%20Analysis.pbix)
  - Note: Power BI supports basic data processing, but for large datasets, it's better to use SQL Server or other ETL tools for intensive processing. This lets Power BI focus on its strength—visualizations—ensuring better performance and faster analysis.
 
@@ -54,8 +54,8 @@ The data source usually comes from the company's CRM-related order data, in belo
 
 
 ## RFM Segementation details and steps
-1. Calculate customer basic Recency, Frequency, Monetary original values via sql,
-since the data source is much earlier than the author's development time, we use the most recent time in the data source as the baseline to calculate recency. once compeletd, you will see sample data as follow:
+### 1. Calculate customer basic Recency, Frequency, Monetary original values via sql
+Since the data source is much earlier than the author's development time, we use the most recent time in the data source as the baseline to calculate recency. once compeletd, you will see sample data as follow:
     
 | CustomerID | Recency | Frequency | Monetary      |
 |------------|---------|-----------|---------------|
@@ -65,7 +65,7 @@ since the data source is much earlier than the author's development time, we use
 | 14911      | 1       | 398       | 291420.81     |
 | 17450      | 8       | 51        | 244784.25     |
 
-2. Binning method:
+### 2. Binning method:
  - Recency: Bin in ascending order (the fewer days, the higher the score).
  - Frequency and Monetary: Bin in descending order (the larger the value, the higher the score).
  - Use NTILE(5) to divide each indicator into 5 groups and generate a score of 1-5.
@@ -77,6 +77,34 @@ since the data source is much earlier than the author's development time, we use
 | 14156      | 9       | 156       | 313409.02     | 5       | 5       | 5       |
 | 14911      | 1       | 398       | 291420.81     | 5       | 5       | 5       |
 | 17450      | 8       | 51        | 244784.25     | 5       | 5       | 5       |
+
+
+### 3. Customer Segmentation Logic
+
+Based on RFM analysis, customers are segmented into the following categories:
+
+| Customer Type            | Business Logic                                                   |
+|--------------------------|-------------------------------------------------------------------|
+| **Top Customers**        | Top customers: R_Score = 5, and both F_Score and M_Score are >= 4. |
+| **At-Risk Customers**    | At-risk customers: R_Score <= 2.                                  |
+| **Dormant Customers**    | Dormant customers: R_Score <= 3 and F_Score <= 2.                 |
+| **High-Potential**       | High-potential customers: R_Score = 5, and either F_Score or M_Score is 3 or 4. |
+| **Mid-Value Customers**  | Mid-value customers: R_Score = 1 or 2, and either F_Score or M_Score is 2 or 3. |
+| **New Customers**        | New customers: F_Score = 1 and R_Score = 5.                      |
+| **Need Attention Customers** | Catch-all category: Customers who do not fit the above conditions, needing special attention & seperate analysis (at this moment, detailed analysis for this group is not included yet). |
+
+As a result, we can see the numbers and proportion for this company customers' segementation as follow：
+| Segment                  | Customer # | Customer % |
+|--------------------------|------------|------------|
+| At-Risk Customers        | 2353       | 40%        |
+| Need Attention Customers | 2070       | 35%        |
+| Top Customers            | 726        | 12%        |
+| Dormant Customers        | 422        | 7%         |
+| High-Potential           | 310        | 5%         |
+
+
+
+
 
 
 

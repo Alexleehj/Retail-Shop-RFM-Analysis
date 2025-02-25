@@ -1,7 +1,7 @@
 # Retail-Shop-RFM-Analysis
 
 ## Project introduction & business target
-In this project, I want to demonstrate a well-known RFM model for analyzing the customer segementation, identify customer value which give marketers better picture of how they can engage customers with different strategies.
+In this project, I want to demonstrate a well-known RFM model for analyzing the customer Segmentation, identify customer value which give marketers better picture of how they can engage customers with different strategies.
 
 ## What is RFM?
 The RFM model describes the value of a customer through three indicators: recent transaction behavior, overall transaction frequency, and transaction amount. Based on these three indicators, 8 types of customer value are divided:
@@ -53,7 +53,7 @@ The data source usually comes from the company's CRM-related order data, in belo
 ![RFM Segement](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/raw/main/RFM%20segements.png)
 
 
-## RFM Segementation details and steps
+## RFM Segmentation details and steps
 ### 1. Calculate customer basic Recency, Frequency, Monetary original values via sql
 Since the data source is much earlier than the author's development time, we use the most recent time in the data source as the baseline to calculate recency. once compeletd, you will see sample data as follow:
     
@@ -93,7 +93,7 @@ Based on RFM analysis, customers are segmented into the following categories:
 | **New Customers**        | New customers: F_Score = 1 and R_Score = 5.                      |
 | **Need Attention Customers** | Catch-all category: Customers who do not fit the above conditions, needing special attention & seperate analysis (at this moment, detailed analysis for this group is not included yet). |
 
-As a result, we can see the numbers and proportion for this company customers' segementation as follow：
+As a result, we can see the numbers and proportion for this company customers' Segmentation as follow：
 | Segment                  | Customer # | Customer % |
 |--------------------------|------------|------------|
 | At-Risk Customers        | 2353       | 40%        |

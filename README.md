@@ -79,7 +79,7 @@ Since the data source is much earlier than the author's development time, we use
 | 17450      | 8       | 51        | 244784.25     | 5       | 5       | 5       |
 
 
-### 3. Customer segmentation Logic
+### 3. Customer segmentation logic
 
 Based on RFM analysis, customers are segmented into the following categories:
 

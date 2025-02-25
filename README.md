@@ -107,7 +107,18 @@ As a result, we can see the numbers and proportion for this company customers' S
 ### 1. Take-aways
   - Compared to the previous year (2010 vs 2011, January-November, due to incomplete records for December 2011), the company’s business performance remained relatively stable with a 1% increase in revenue.
   - The average order value per customer increased by 7% (from £350 to £376). However, there was a 2% decrease in the number of customers and a 6% decline in the number of orders. Further investigation into order patterns (e.g., repeat orders, cross-product purchases) is needed, and will be included in the next analysis release.
- - The customer base shows a relatively small proportion of loyal customers (12%) and low potential customer pipelines (5%), with no new customers acquired. In contrast, at-risk customers, dormant customers, and those requiring attention make up approximately 83% of the total customer base.
+ - The customer base shows a relatively small proportion of loyal customers (12%) and low potential customer pipelines (5%), with no new customers acquired. In contrast, at-risk customers, dormant customers, and those requiring attention make up approximately 82% of the total customer base.
+
+
+### 2. Marketing Strategy Optimization Recommendations
+
+| Priority | Target Segment                  | Strategy Description                                                                 |
+|----------|----------------------------------|--------------------------------------------------------------------------------------|
+| 1        | At-Risk Customers (40%)         | Design a tiered recall plan to precisely reach customers at different stages of churn. |
+| 2        | Need Attention + Dormant (42%)  | Leverage data-driven insights to uncover the value of dormant customers.              |
+| 3        | Top + High-Potential Customers (17%) | Strengthen customer loyalty programs to tap into secondary growth opportunities.       |
+| 4        | New Customers (0%)              | Optimize customer acquisition channels and improve conversion efficiency.              |
+| 5        | Mid-Value Customers (35%)       | Enhance ARPU (Average Revenue Per User) through cross-selling and personalized campaigns. |
 
 
 

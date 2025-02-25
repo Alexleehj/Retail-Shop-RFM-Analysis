@@ -50,7 +50,7 @@ The data source usually comes from the company's CRM-related order data, in belo
 
 ## Dashboard Snapshoot
 ![Business Overview](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/raw/main/Retail%20shop%20business%20overview.png)
-![RFM Segement](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/raw/main/RFM%20segements.png)
+![RFM Segment](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/RFM%20segments.png)
 
 
 ## RFM Segmentation details and steps

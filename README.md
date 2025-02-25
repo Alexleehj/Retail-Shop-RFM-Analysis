@@ -3,7 +3,7 @@
 ## Project introduction & business target
 In this project, I want to demonstrate a well-known RFM model for analyzing the customer segementation, identify customer value which give marketers better picture of how they can engage customers with different strategies.
 
-## What is RFM
+## What is RFM?
 The RFM model describes the value of a customer through three indicators: recent transaction behavior, overall transaction frequency, and transaction amount. Based on these three indicators, 8 types of customer value are divided:
 
  - Important value customers
@@ -17,7 +17,7 @@ The RFM model describes the value of a customer through three indicators: recent
 
 After distinguishing these customer types, companies can focus its main energy and resources on important value customers, important recall customers, and important deep-cultivation customers.
 
-## Which companies and industries use the RFM model
+## Which companies and industries use the RFM model?
 
 RFM is commonly used in industries such as consumer goods, cosmetics, small appliances, video stores, supermarkets, gas stations, travel insurance, transportation, express delivery, fast food restaurants, KTV, mobile phones, credit cards, and securities companies.
 
@@ -44,12 +44,40 @@ The data source usually comes from the company's CRM-related order data, in belo
 ## Analysis tools
  - Microsoft SQL Server for data analysis, view details [Here](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Online%20retail%20shop%20RFM%20Analysis.sql)
  - Power BI for data visualization [Here](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Retail%20RFM%20Analysis.pbix)
+ - Note: Power BI supports basic data processing, but for large datasets, it's better to use SQL Server or other ETL tools for intensive processing. This lets Power BI focus on its strength—visualizations—ensuring better performance and faster analysis.
 
 
 
 ## Dashboard Snapshoot
 ![Business Overview](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/raw/main/Retail%20shop%20business%20overview.png)
 ![RFM Segement](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/raw/main/RFM%20segements.png)
+
+
+## RFM Segementation details and steps
+1. Calculate customer based Recency, Frequency, Monetary original values via sql
+Since the data source is much earlier than the author's development time, we use the most recent time in the data source as the baseline to calculate recency. once compeletd, you will see sample data as follow:
+    
+| CustomerID | Recency | Frequency | Monetary      |
+|------------|---------|-----------|---------------|
+| 18102      | 0       | 145       | 580987.04     |
+| 14646      | 1       | 152       | 528510.78     |
+| 14156      | 9       | 156       | 313409.02     |
+| 14911      | 1       | 398       | 291420.81     |
+| 17450      | 8       | 51        | 244784.25     |
+
+2. Binning method:
+ - Recency: Bin in ascending order (the fewer days, the higher the score).
+ - Frequency and Monetary: Bin in descending order (the larger the value, the higher the score).
+ - Use NTILE(5) to divide each indicator into 5 groups and generate a score of 1-5.
+
+| CustomerID | Recency | Frequency | Monetary      | R_Score | F_Score | M_Score |
+|------------|---------|-----------|---------------|---------|---------|---------|
+| 18102      | 0       | 145       | 580987.04     | 5       | 5       | 5       |
+| 14646      | 1       | 152       | 528510.78     | 5       | 5       | 5       |
+| 14156      | 9       | 156       | 313409.02     | 5       | 5       | 5       |
+| 14911      | 1       | 398       | 291420.81     | 5       | 5       | 5       |
+| 17450      | 8       | 51        | 244784.25     | 5       | 5       | 5       |
+
 
 
 

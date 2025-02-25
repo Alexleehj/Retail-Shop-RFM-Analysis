@@ -104,7 +104,10 @@ As a result, we can see the numbers and proportion for this company customers' S
 
 
 ## Take away and marketing approach
-
+### 1. Take-aways
+  - Compared to the previous year (2010 vs 2011, January-November, due to incomplete records for December 2011), the company’s business performance remained relatively stable with a 1% increase in revenue.
+  - The average order value per customer increased by 7% (from £350 to £376). However, there was a 2% decrease in the number of customers and a 6% decline in the number of orders. Further investigation into order patterns (e.g., repeat orders, cross-product purchases) is needed, and will be included in the next analysis release.
+ - The customer base shows a relatively small proportion of loyal customers (12%) and low potential customer pipelines (5%), with no new customers acquired. In contrast, at-risk customers, dormant customers, and those requiring attention make up approximately 83% of the total customer base.
 
 
 

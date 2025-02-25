@@ -110,7 +110,7 @@ As a result, we can see the numbers and proportion for this company customers' S
  - The customer base shows a relatively small proportion of loyal customers (12%) and low potential customer pipelines (5%), with no new customers acquired. In contrast, at-risk customers, dormant customers, and those requiring attention make up approximately 82% of the total customer base.
 
 
-### 2. Marketing Strategy Optimization Recommendations
+### 2. Marketing strategy optimization recommendations
 
 | Priority | Target Segment                  | Strategy Description                                                                 |
 |----------|----------------------------------|--------------------------------------------------------------------------------------|

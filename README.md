@@ -1,7 +1,7 @@
 # Retail-Shop-RFM-Analysis
 
 ## Project introduction & business target
-In this project, I want to demonstrate a well-known RFM model for analyzing the customer Segmentation, identify customer value which give marketers better picture of how they can engage customers with different strategies.
+In this project, I want to demonstrate a well-known RFM model for analyzing the customer segmentation, identify customer value which give marketers better picture of how they can engage customers with different strategies.
 
 ## What is RFM?
 The RFM model describes the value of a customer through three indicators: recent transaction behavior, overall transaction frequency, and transaction amount. Based on these three indicators, 8 types of customer value are divided:
@@ -48,12 +48,12 @@ The data source usually comes from the company's CRM-related order data, in belo
 
 
 
-## Dashboard Snapshoot
+## Dashboard snapshoot
 ![Business Overview](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/raw/main/Retail%20shop%20business%20overview.png)
 ![RFM Segment](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/RFM%20segments.png)
 
 
-## RFM Segmentation details and steps
+## RFM segmentation details and steps
 ### 1. Calculate customer basic Recency, Frequency, Monetary original values via sql
 Since the data source is much earlier than the author's development time, we use the most recent time in the data source as the baseline to calculate recency. once compeletd, you will see sample data as follow:
     
@@ -79,7 +79,7 @@ Since the data source is much earlier than the author's development time, we use
 | 17450      | 8       | 51        | 244784.25     | 5       | 5       | 5       |
 
 
-### 3. Customer Segmentation Logic
+### 3. Customer segmentation Logic
 
 Based on RFM analysis, customers are segmented into the following categories:
 

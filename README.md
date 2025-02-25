@@ -44,7 +44,8 @@ The data source usually comes from the company's CRM-related order data, in belo
 ## Analysis tools
  - Microsoft SQL Server for ETL jobs, view details [Here](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Online%20retail%20shop%20RFM%20Analysis.sql)
  - Power BI for data visualization [Here](https://github.com/Alexleehj/Retail-Shop-RFM-Analysis/blob/main/Retail%20RFM%20Analysis.pbix)
- - Note: Power BI supports basic data processing, but for large datasets, it's better to use SQL Server or other ETL tools for intensive processing. This lets Power BI focus on its strength—visualizations—ensuring better performance and faster analysis.
+
+Power BI supports basic data processing, but for large datasets, it's better to use SQL Server or other ETL tools for intensive processing. This lets Power BI focus on its strength—visualizations—ensuring better performance and faster analysis.
 
 
 

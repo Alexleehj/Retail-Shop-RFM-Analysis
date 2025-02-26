@@ -56,6 +56,14 @@ Power BI supports basic data processing, but for large datasets, it's better to 
 
 ## RFM segmentation details and steps
 ### 1. Calculate customer basic Recency, Frequency, Monetary original values
+
+| **RFM Factor**        | **Definition**                                           | **Calculation Rule**                                                              |
+|-----------------------|----------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **Recency (R)**       | How recently a customer made a purchase.                 | Measured by the number of days since the last purchase.                           |
+| **Frequency (F)**     | How often a customer makes a purchase.                   | Total number of purchases made by the customer over a specified time period.      |
+| **Monetary (M)**      | How much money a customer spends.                        | Total amount of money spent by the customer over a specified period.              |
+
+
 Since the data source is much earlier than the author's development time, we use the most recent time in the data source as the baseline to calculate recency. once compeletd, you will see sample data as follow:
     
 | CustomerID | Recency | Frequency | Monetary      |
